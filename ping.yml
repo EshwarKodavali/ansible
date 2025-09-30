@@ -1,5 +1,5 @@
 - name: "to ping the device"
-  host: frontend
+  hosts: frontend
   tasks:
   - name: Example from an Ansible Playbook
     ansible.builtin.ping:
