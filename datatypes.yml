@@ -2,10 +2,14 @@
   hosts: local
   connection: local
   vars:
-    name: "my name is eshwar"
+    name: "eshwar"
     age: 24
     is_live: true
     tools: ["linux", "shell", "ansible"]
     cm:
       name: CBN
       other: jagan
+  tasks:
+  - name: "to print datatypes"
+    ansible.builtin.debug
+      msg: "my name: {{ name }}, age: {{ age }}, is it live?: {{ is_live }}, tools are: {{ tools }} cm are: {{ cm }}"
