@@ -12,4 +12,4 @@
   tasks:
   - name: to print datatypes
     ansible.builtin.debug:
-      msg: "my name: {{ name }}, age: {{ age }}, is it live?: {{ is_live }}, tools are: {{ tools }} cm are: {{ cm }}"
+      msg: "my name: {{ per_name }}, age: {{ age }}, is it live?: {{ is_live }}, tools are: {{ tools }} cm are: {{ cm }}"
