@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    name: "eshwar"
+    per_name: "eshwar"
     age: 24
     is_live: true
     tools: ["linux", "shell", "ansible"]
