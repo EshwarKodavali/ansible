@@ -1,5 +1,5 @@
 - name: to check variables
-  host: local
+  hosts: local
   connection: local
   tasks:
   - vars:
