@@ -11,4 +11,4 @@
   tasks:
     - name: Show username and password
       ansible.builtin.debug:
-      msg: "my name is {{ username }} and your password is {{ password }}"
+        msg: "my name is {{ username }} and your password is {{ password }}"
