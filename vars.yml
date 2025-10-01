@@ -1,9 +1,13 @@
 - name: to check variables
   hosts: local
   connection: local
-  tasks:
-  - vars:
-      name: eshwar
-      age: 24
+  vars_promt:
+  - name: username
+    prompt: What is your username?
+    private: false
+  - name: password
+    prompt: What is your password?
+    private: true
+  - tasks:
     ansible.builtin.debug:
-      msg: "my name is {{ name }} and my age is {{ age }}"
+      msg: "my name is {{ username }} and your password is {{ password }}"
