@@ -4,7 +4,7 @@
   tasks:
   - name: to download package
     ansible.builtin.package
-      name: {{ item }}
+      name: "{{ item }}""
       state: latest
     loop: ["nginx", "mysql", "zip"]
     
