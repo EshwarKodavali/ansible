@@ -1,0 +1,11 @@
+- name: to check datatypes
+  hosts: local
+  connection: local
+  vars:
+    name: "my name is eshwar"
+    age: 24
+    is_live: true
+    tools: ["linux", "shell", "ansible"]
+    cm:
+      name: CBN
+      other: jagan
