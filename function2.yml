@@ -1,0 +1,16 @@
+- name: For functions
+  hosts: local
+  connection: local
+  tasks:
+    - name: Set fact with content from a file
+      ansible.builtin.set_fact:
+        my_file_content: "{{ lookup('file', 'datatypes.yml') | from_yaml }}"
+
+    - name: Convert YAML data to JSON string
+      ansible.builtin.debug:
+        msg: "{{ my_file_content | to_json }}"
+
+    - name: Save response to a JSON file
+      ansible.builtin.copy:
+        content: "{{ my_file_content | to_nice_json }}"
+        dest: ./yaml_to_json.json
