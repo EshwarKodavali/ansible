@@ -7,11 +7,11 @@
     register: redirect_output
   - name: to print above output
     ansible.builtin.debug:
-      msg: "redirect_output"
+      msg: "{{ redirect_output }}"
 
   - name: redirect the output
     ansible.builtin.command: ls -ltr
     register: redirect_output
   - name: to print above output
     ansible.builtin.debug:
-      msg: "redirect_output"
+      msg: "{{ redirect_output }}"
