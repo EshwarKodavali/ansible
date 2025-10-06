@@ -1,7 +1,7 @@
 - name: For functions
   hosts: local
   connection: local
-  var:
+  vars:
     technologies: shell,ansible,linux,git
   tasks:
   - name: to convert into list
