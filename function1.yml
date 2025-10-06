@@ -1,0 +1,9 @@
+- name: For functions
+  hosts: local
+  connection: local
+  var:
+    technologies: shell,ansible,linux,git
+  tasks:
+  - name: to convert into list
+    ansible.builtin.debug:
+      msg: "technologies are: {{ technologies | split(',') }}"
