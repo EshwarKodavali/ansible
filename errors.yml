@@ -9,3 +9,7 @@
   - name: to print output
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
+
+  - name: to create user
+    ansible.builtin.command: useradd roboshop
+    when: redirect_output.rc != 0  
